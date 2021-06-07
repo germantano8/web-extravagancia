@@ -1,0 +1,66 @@
+/*********************************************************************/
+/* Bootstrap 4 Multiple Item Carousel */
+/*********************************************************************/
+/* medium - display 2  */
+
+@media (min-width: 480px) {
+
+    #marcas .carousel-inner .carousel-item-right.active,
+    #marcas .carousel-inner .carousel-item-next {
+        transform: translateX(100%);
+    }
+
+    #marcas .carousel-inner .carousel-item-left.active,
+    #marcas .carousel-inner .carousel-item-prev {
+        transform: translateX(-100%);
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    #marcas .carousel-inner .carousel-item-right.active,
+    #marcas .carousel-inner .carousel-item-next {
+        transform: translateX(50%);
+    }
+
+    #marcas .carousel-inner .carousel-item-left.active,
+    #marcas .carousel-inner .carousel-item-prev {
+        transform: translateX(-50%);
+    }
+}
+
+/* large - display 3 */
+@media (min-width: 992px) {
+
+    #marcas .carousel-inner .carousel-item-right.active,
+    #marcas .carousel-inner .carousel-item-next {
+        transform: translateX(33%);
+    }
+
+    #marcas .carousel-inner .carousel-item-left.active,
+    #marcas .carousel-inner .carousel-item-prev {
+        transform: translateX(-33%);
+    }
+}
+
+@media (max-width: 768px) {
+    #marcas .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    #marcas .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+#marcas .carousel-inner .carousel-item.active,
+#marcas .carousel-inner .carousel-item-next,
+#marcas .carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+#marcas .carousel-inner .carousel-item-right,
+#marcas .carousel-inner .carousel-item-left {
+    transform: translateX(0);
+}
