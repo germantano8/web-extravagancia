@@ -11,7 +11,6 @@ if(isset($_SESSION['usuario'])){
 	header('Location: login.php');
 }
 
-error_reporting(E_ERROR | E_WARNING | E_PARSE); // ESTO OCULTA LOS NOTICES "UNDEFINED INDEX", NECESARIO
 
 if(isset($_POST['subir'])){
 	
